@@ -19,5 +19,28 @@ font-family:'Poppins',sans-serif;
 background:linear-gradient(135deg,#fff0f0,#ffe5d9);
 overflow-x:hidden;
 }
+/* Floating Shapes */
+body::before, body::after{
+content:'';
+position:absolute;
+width:300px;
+height:300px;
+background:radial-gradient(circle,#ff6b6b,transparent);
+border-radius:50%;
+z-index:-1;
+}
 
+body::before{top:-100px;left:-100px;}
+body::after{bottom:-100px;right:-100px;}
+
+/* Navbar */
+nav{
+position:fixed;
+width:100%;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+padding:15px;
+text-align:center;
+z-index:1000;
+}
 
