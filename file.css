@@ -19,7 +19,7 @@ font-family:'Poppins',sans-serif;
 background:linear-gradient(135deg,#fff0f0,#ffe5d9);
 overflow-x:hidden;
 }
-/* Floating Shapes */
+
 body::before, body::after{
 content:'';
 position:absolute;
@@ -33,7 +33,7 @@ z-index:-1;
 body::before{top:-100px;left:-100px;}
 body::after{bottom:-100px;right:-100px;}
 
-/* Navbar */
+
 nav{
 position:fixed;
 width:100%;
