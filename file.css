@@ -220,7 +220,7 @@ padding:20px;
 margin-top:40px;
 }
 
-/* Responsive */
+
 @media(max-width:600px){
 .hero h1{font-size:40px;}
 }
