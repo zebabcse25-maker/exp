@@ -97,7 +97,7 @@ color:#8B0000;
 margin-bottom:40px;
 }
 
-/* Gallery */
+
 .gallery{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -117,7 +117,7 @@ filter:brightness(0.8);
 transform:scale(1.1);
 filter:brightness(1);
 }
-/* Menu */
+
 .buttons button{
 padding:10px 20px;
 margin:10px;
