@@ -99,7 +99,6 @@ input, select {
     transition: 0.3s;
 }
 
-/* 🔥 Input hover */
 input:hover, select:hover {
     border: 1px solid #6b2c2c;
 }
