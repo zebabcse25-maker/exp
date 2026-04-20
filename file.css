@@ -16,7 +16,7 @@ h2 {
     transition: 0.3s;
 }
 
-/* 🔥 Hover effect on headings */
+
 h1:hover, h2:hover {
     color: #8b3a3a;
     letter-spacing: 2px;
