@@ -1,44 +1,138 @@
-/* 🔥 Smooth transition for all elements */
-* {
-    transition: all 0.3s ease;
+/* Page style */
+body {
+    background-color: #fff8f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
 }
 
-/* 🔥 Image Hover */
-img:hover {
-    transform: scale(1.08) rotate(1deg);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+/* Headings */
+h1 {
+    color: #6b2c2c;
+    transition: 0.3s;
 }
 
-/* 🔥 Gallery Images Hover */
-.gallery img:hover {
-    transform: scale(1.1);
-    border-color: #3a7bd5;
+h2 {
+    color: #6b2c2c;
+    transition: 0.3s;
 }
 
-/* 🔥 Table Row Hover */
-table tr:hover {
-    background-color: #dfe9ff;
-}
-
-/* 🔥 Button Hover */
-input[type="submit"]:hover {
-    background: linear-gradient(to right, #8e7dff, #3a7bd5);
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-/* 🔥 Offer Box Hover */
-.offer:hover {
-    transform: scale(1.03);
-    background-color: #dcd6ff;
-}
-
-/* 🔥 Contact Hover */
-.contact:hover {
-    background-color: #2f65c7;
-}
-
-/* 🔥 Heading Hover */
+/* 🔥 Hover effect on headings */
 h1:hover, h2:hover {
+    color: #8b3a3a;
     letter-spacing: 2px;
+}
+
+/* Tagline */
+.tagline {
+    color: #444;
+}
+
+/* Paragraph */
+p {
+    color: #333;
+    font-size: 16px;
+}
+
+/* Center spacing */
+center {
+    padding: 20px;
+}
+
+/* 🔥 Image styling + hover */
+img {
+    border-radius: 10px;
+    margin: 10px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+/* Table */
+table {
+    border-collapse: collapse;
+    width: 60%;
+    background: white;
+    transition: 0.3s;
+}
+
+/* 🔥 Table hover */
+table:hover {
+    transform: scale(1.02);
+}
+
+th {
+    background-color: #6b2c2c;
+    color: white;
+}
+
+td, th {
+    padding: 15px;
+    text-align: center;
+}
+
+/* 🔥 Row hover */
+tr:hover {
+    background-color: #f5dada;
+}
+
+tr:nth-child(even) {
+    background-color: #f2e6e6;
+}
+
+/* Form */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* 🔥 Form hover */
+form:hover {
+    transform: scale(1.03);
+}
+
+/* Inputs */
+input, select {
+    width: 200px;
+    padding: 8px;
+    margin-top: 5px;
+    transition: 0.3s;
+}
+
+/* 🔥 Input hover */
+input:hover, select:hover {
+    border: 1px solid #6b2c2c;
+}
+
+/* 🔥 Input focus */
+input:focus, select:focus {
+    outline: none;
+    border: 2px solid #8b3a3a;
+}
+
+/* Button */
+input[type="submit"] {
+    background-color: #6b2c2c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* 🔥 Button hover */
+input[type="submit"]:hover {
+    background-color: #8b3a3a;
+    transform: scale(1.1);
+}
+
+/* Line */
+hr {
+    width: 80%;
+    border: 1px solid #ddd;
 }
