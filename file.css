@@ -56,7 +56,7 @@ table {
     transition: 0.3s;
 }
 
-/* 🔥 Table hover */
+
 table:hover {
     transform: scale(1.02);
 }
