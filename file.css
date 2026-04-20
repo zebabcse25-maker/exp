@@ -117,7 +117,6 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-/* 🔥 Button hover */
 input[type="submit"]:hover {
     background-color: #8b3a3a;
     transform: scale(1.1);
