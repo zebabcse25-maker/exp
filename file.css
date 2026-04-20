@@ -71,7 +71,6 @@ td, th {
     text-align: center;
 }
 
-/* 🔥 Row hover */
 tr:hover {
     background-color: #f5dada;
 }
