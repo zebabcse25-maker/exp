@@ -1,1 +1,44 @@
+/* 🔥 Smooth transition for all elements */
+* {
+    transition: all 0.3s ease;
+}
 
+/* 🔥 Image Hover */
+img:hover {
+    transform: scale(1.08) rotate(1deg);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* 🔥 Gallery Images Hover */
+.gallery img:hover {
+    transform: scale(1.1);
+    border-color: #3a7bd5;
+}
+
+/* 🔥 Table Row Hover */
+table tr:hover {
+    background-color: #dfe9ff;
+}
+
+/* 🔥 Button Hover */
+input[type="submit"]:hover {
+    background: linear-gradient(to right, #8e7dff, #3a7bd5);
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* 🔥 Offer Box Hover */
+.offer:hover {
+    transform: scale(1.03);
+    background-color: #dcd6ff;
+}
+
+/* 🔥 Contact Hover */
+.contact:hover {
+    background-color: #2f65c7;
+}
+
+/* 🔥 Heading Hover */
+h1:hover, h2:hover {
+    letter-spacing: 2px;
+}
