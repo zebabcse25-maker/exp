@@ -113,6 +113,7 @@ input[type="submit"] {
     border: none;
     cursor: pointer;
 }
+
 input[type="submit"]:hover {
     background-color: #8b3a3a;
     transform: scale(1.1);
