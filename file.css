@@ -123,7 +123,6 @@ input[type="submit"]:hover {
     transform: scale(1.1);
 }
 
-/* Line */
 hr {
     width: 80%;
     border: 1px solid #ddd;
