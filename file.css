@@ -76,28 +76,23 @@ input, select {
     margin-top: 5px;
     transition: 0.3s;
 }
-
 input:hover, select:hover {
     border: 1px solid #6b2c2c;
 }
-
 input:focus, select:focus {
     outline: none;
     border: 2px solid #8b3a3a;
 }
-
 input[type="submit"] {
     background-color: #6b2c2c;
     color: white;
     border: none;
     cursor: pointer;
 }
-
 input[type="submit"]:hover {
     background-color: #8b3a3a;
     transform: scale(1.1);
 }
-
 hr {
     width: 80%;
     border: 1px solid #ddd;
