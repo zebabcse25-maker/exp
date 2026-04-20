@@ -115,6 +115,10 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+input[type="submit"]:hover {
+    background-color: #8b3a3a;
+    transform: scale(1.1);
+}
 
 hr {
     width: 80%;
