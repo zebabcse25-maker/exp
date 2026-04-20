@@ -4,26 +4,21 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
 }
-
 h1 {
     color: #6b2c2c;
     transition: 0.3s;
 }
-
 h2 {
     color: #6b2c2c;
     transition: 0.3s;
 }
-
 h1:hover, h2:hover {
     color: #8b3a3a;
     letter-spacing: 2px;
 }
-
 .tagline {
     color: #444;
 }
-
 p {
     color: #333;
     font-size: 16px;
