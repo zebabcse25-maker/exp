@@ -93,7 +93,6 @@ form:hover {
     transform: scale(1.03);
 }
 
-/* Inputs */
 input, select {
     width: 200px;
     padding: 8px;
