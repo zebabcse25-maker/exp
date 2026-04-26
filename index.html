@@ -1,79 +1,110 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Italian foodiess</title>
-  <link rel="stylesheet" href="file.css">
+<title>Italian Foodiess</title>
 </head>
+
 <body bgcolor="#fff8f0">
+
+
+<table width="100%" bgcolor="blue" cellpadding="12">
+<tr align="center">
+<td><a href="#home"><font color="white">Home</font></a></td>
+<td><a href="#about"><font color="white">About</font></a></td>
+<td><a href="#menu"><font color="white">Menu</font></a></td>
+<td><a href="#reservation"><font color="white">Reservation</font></a></td>
+<td><a href="#contact"><font color="white">Contact</font></a></td>
+</tr>
+</table>
+
+
 <center>
-<h1><font color="#6b2c2c"> italian foodiess </font></h1>
+<br>
+<form>
+<input type="text" placeholder="Search Food Here" size="40">
+<input type="submit" value="Search">
+</form>
+</center>
+
+
+<center id="home">
+<h1><font color="#6b2c2c">ITALIAN FOODIESS </font></h1>
 <p><i>Authentic Italian Restaurant</i></p>
+<hr width="80%">
 </center>
-<hr>
-<center>
-<p width="60%">
-italian foodies is a small Italian restaurant where people can enjoy tasty food 
-in a peaceful environment. It has both indoor and outdoor seating and is perfect 
-for family dinners and special occasions.
-</p>
-<img src="res.jpg" width="250" height="250">
-</center>
-<hr>
-<center>
-<h2><font color="#6b2c2c">ONLY TASTY</font></h2>
-<img src="images.webp" width="200" height="200">
-<img src="noodles.jpg" width="200" height="200">
-<img src="pasta.jpg" width="200" height="200">
-<img src="chpizza.jpg" width="200" height="200">
-</center>
-<hr>
-<center>
-<h2><font color="#6b2c2c">Menu</font></h2>
-</center>
-<table border="5" align="center" cellpadding="25">
+
+<center id="about">
+<table width="80%" cellpadding="15">
 <tr>
+<td width="50%">
+<h2><font color="#6b2c2c">About Us</font></h2>
+<p>
+Italian Foodiess is a small Italian restaurant where people can enjoy tasty food
+in a peaceful environment. Perfect for family dinners and special occasions.
+</p>
+</td>
+
+<td width="50%">
+<img src="res.jpg" width="400" height="250" border="3">
+</td>
+</tr>
+</table>
+</center>
+
+<hr width="80%">
+
+
+<center id="menu">
+<h2><font color="#6b2c2c">Our Special Menu</font></h2>
+
+<table cellpadding="10">
+<tr>
+<td><img src="noodles.jpg" width="180" height="180" border="2"><br>Noodles</td>
+<td><img src="pasta.jpg" width="180" height="180" border="2"><br>Pasta</td>
+<td><img src="chpizza.jpg" width="180" height="180" border="2"><br>Chicken Pizza</td>
+</tr>
+</table>
+
+<br>
+
+<table border="3" cellpadding="15" width="70%">
+<tr bgcolor="lightpink">
 <th>Type</th>
 <th>Dish</th>
 <th>Price</th>
 </tr>
-<tr>
+
+<tr align="center">
 <td>Veg</td>
-<td><i>Margherita Pizza</i></td>
+<td>Margherita Pizza</td>
 <td>₹250</td>
 </tr>
 
-<tr>
+<tr align="center">
 <td>Veg</td>
-<td><i>Veg Pasta</i></td>
+<td>Veg Pasta</td>
 <td>₹300</td>
 </tr>
 
-<tr>
+<tr align="center">
 <td>Non-Veg</td>
-<td><i>Chicken Pasta</i></td>
+<td>Chicken Pasta</td>
 <td>₹350</td>
 </tr>
 
-<tr>
+<tr align="center">
 <td>Non-Veg</td>
-<td><i>Spaghetti</i></td>
+<td>Spaghetti</td>
 <td>₹400</td>
 </tr>
-
 </table>
-
-<hr>
-
-<center>
-<h2><font color="#6b2c2c">Special Offer</font></h2>
-<p><b> Valentine Special Dinner </b></p>
-<p>Limited seats available. Book now!</p>
 </center>
 
-<hr>
+<hr width="80%">
 
-<center>
-<h2><font color="#6b2c2c">Table Reservation</font></h2>
+
+<center id="reservation">
+<h2><font color="#6b2c2c">Book Table</font></h2>
 
 <form>
 Name:<br>
@@ -85,27 +116,20 @@ Phone:<br>
 Date:<br>
 <input type="date"><br><br>
 
-Time:<br>
-<input type="time"><br><br>
-
-Guests:<br>
-<select>
-<option>2</option>
-<option>4</option>
-<option>6</option>
-</select><br><br>
-
-<input type="submit" value="Book Table">
+<input type="submit" value="Reserve Now">
 </form>
-
 </center>
 
-<hr>
-
-<center>
+<hr width="80%">
+<center id="contact">
 <h2><font color="#6b2c2c">Contact</font></h2>
-<p> 9876543210</p>
-<p> itala@gmail.com</p>
+<p>9876543210</p>
+<p>itala@gmail.com</p>
 </center>
+
 </body>
 </html>
+  <link rel="stylesheet" href="file.css">
+
+
+
