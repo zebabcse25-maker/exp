@@ -769,7 +769,7 @@
         <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
         <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
       </div>
-      <p>© 2026 Italian Foodiess. Made with ❤️ in Nagpur.</p>
+      <p>© 2026 Italian Foodiess. Made with in Nagpur.</p>
     </div>
   </div>
 </section>
