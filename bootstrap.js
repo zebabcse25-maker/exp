@@ -1,11 +1,15 @@
 
-
-// Confirm order function
+// Reservation form confirm function
 function confirmOrder() {
-    let username = document.getElementById("name").value;
+    let username = document.getElementById("name").value.trim();
+
+    if(username === "") {
+        alert("Please enter your name!");
+        return false;
+    }
 
     document.getElementById("msg").innerHTML =
-    "✅ Thank You " + username + "! Your table booking is confirmed.";
+        "✅ Thank You " + username + "! Your table booking is confirmed.";
 
-    return false;
+    return false; // page reload hone se rokta hai
 }
