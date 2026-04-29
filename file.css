@@ -1,155 +1,193 @@
-
 :root{
-  --red:#c0392b;
-  --gold:#d4a017;
-  --dark:#1a1a1a;
-  --cream:#fdf6ec;
+--red:#c0392b;
+--gold:#d4a017;
+--dark:#1a1a1a;
+--cream:#fdf6ec;
 }
 
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  scroll-behavior:smooth;
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
 body{
-  font-family:Arial,sans-serif;
-  background:var(--cream);
-  color:#333;
+font-family:Arial,sans-serif;
+background:var(--cream);
+color:#333;
+padding-top:80px;
 }
 
-/* Navbar */
 .navbar{
-  background:var(--dark) !important;
-  padding:15px 0;
+background:var(--dark)!important;
+padding:15px 0;
 }
 
 .navbar-brand{
-  color:var(--gold) !important;
-  font-size:28px;
-  font-weight:bold;
+color:var(--gold)!important;
+font-size:28px;
+font-weight:bold;
 }
 
 .nav-link{
-  color:#fff !important;
-  margin-left:12px;
-  transition:0.3s;
+color:#fff!important;
+margin-left:14px;
+transition:.3s;
 }
 
 .nav-link:hover{
-  color:var(--gold) !important;
+color:var(--gold)!important;
 }
 
-/* Hero Section */
 #home{
-  min-height:100vh;
-  background:url("https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1400") center/cover no-repeat;
-  display:flex;
-  align-items:center;
+min-height:100vh;
+background:url("https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1400") center/cover no-repeat;
+display:flex;
+align-items:center;
 }
 
 .overlay{
-  width:100%;
-  background:rgba(0,0,0,0.65);
-  padding:120px 0;
-  color:#fff;
+width:100%;
+background:rgba(0,0,0,.65);
+padding:140px 0;
+color:#fff;
 }
 
 .overlay h1{
-  margin-bottom:15px;
+margin-bottom:20px;
 }
 
 .overlay p{
-  font-size:20px;
-  margin-bottom:25px;
+font-size:22px;
+margin-bottom:30px;
 }
 
-/* Buttons */
 .btn-gold{
-  background:var(--gold);
-  color:#fff;
-  padding:12px 28px;
-  border:none;
-  border-radius:30px;
-  text-decoration:none;
-  font-weight:bold;
-  transition:0.3s;
+background:var(--gold);
+color:#fff;
+padding:12px 30px;
+border:none;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+display:inline-block;
 }
 
 .btn-gold:hover{
-  background:#b8860b;
-  color:#fff;
-}
-
-/* Sections */
-.section-title{
-  color:var(--red);
-  font-weight:bold;
-  margin-bottom:20px;
+background:#b8860b;
+color:#fff;
+transform:scale(1.05);
 }
 
 #about,
 #food,
 #reservation{
-  padding:70px 0;
+padding:80px 0;
 }
 
-/* Cards */
+.section-title{
+color:var(--red);
+font-weight:bold;
+margin-bottom:25px;
+font-size:40px;
+}
+
 .card{
-  border:none;
-  border-radius:12px;
-  overflow:hidden;
-  transition:0.3s;
+border:none;
+border-radius:15px;
+overflow:hidden;
+transition:.4s;
 }
 
 .card:hover{
-  transform:translateY(-8px);
+transform:translateY(-10px);
 }
 
 .card img{
-  height:220px;
-  object-fit:cover;
+height:240px;
+object-fit:cover;
 }
 
 .card-body h5{
-  color:var(--red);
-  font-weight:bold;
+color:var(--red);
+font-weight:bold;
 }
 
-/* Reservation */
+.card-body h6{
+color:var(--gold);
+font-size:20px;
+}
+
 #reservation{
-  background:#fff;
+background:#fff;
 }
 
 .form-control{
-  padding:12px;
-  border-radius:8px;
+padding:14px;
+border-radius:10px;
+border:1px solid #ddd;
 }
 
-/* Contact */
+.form-control:focus{
+box-shadow:none;
+border:1px solid var(--gold);
+}
+
 #contact{
-  background:var(--dark);
-  color:#fff;
-  padding:60px 0;
+background:var(--dark);
+color:#fff;
+padding:70px 0;
 }
 
 #contact .section-title{
-  color:#fff;
+color:#fff;
 }
 
 #contact p{
-  margin:8px 0;
+margin:12px 0;
+font-size:18px;
 }
 
 .footer a{
-  color:var(--gold);
-  font-size:22px;
-  margin:0 10px;
-  text-decoration:none;
-  transition:0.3s;
+color:var(--gold);
+font-size:26px;
+margin:0 12px;
+text-decoration:none;
+transition:.3s;
 }
 
 .footer a:hover{
-  color:#fff;
+color:#fff;
+}
+
+#about h4{
+color:var(--red);
+margin-bottom:12px;
+font-weight:bold;
+}
+
+@media(max-width:768px){
+
+.overlay h1{
+font-size:45px;
+}
+
+.overlay p{
+font-size:18px;
+}
+
+.section-title{
+font-size:32px;
+}
+
+.navbar-brand{
+font-size:22px;
+}
+
+.card img{
+height:200px;
+}
+
 }
