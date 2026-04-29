@@ -1,143 +1,129 @@
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
 
-public class ItalianFoodiess extends JFrame {
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.15 });
 
-    public ItalianFoodiess() {
-        setTitle("Italian Foodiess");
-        setSize(1000, 700);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLocationRelativeTo(null);
+document.querySelectorAll('.slide-in').forEach(el => observer.observe(el));
 
-        Color cream = new Color(253, 246, 236);
-        Color gold = new Color(212, 160, 23);
-        Color dark = new Color(26, 26, 26);
-        Color red = new Color(192, 57, 43);
+let lastScroll = 0;
+const navbar = document.querySelector('.navbar');
 
-        JPanel mainPanel = new JPanel();
-        mainPanel.setLayout(new BorderLayout());
+window.addEventListener('scroll', () => {
+  const currentScroll = window.scrollY;
 
-        // NAVBAR
-        JPanel navbar = new JPanel();
-        navbar.setBackground(dark);
-        navbar.setLayout(new FlowLayout(FlowLayout.CENTER, 20, 15));
+  if (currentScroll > lastScroll && currentScroll > 80) {
+    navbar.style.transform = 'translateY(-100%)';  // hide
+  } else {
+    navbar.style.transform = 'translateY(0)';       // show
+  }
 
-        JLabel logo = new JLabel("🍝 Italian Foodiess");
-        logo.setForeground(gold);
-        logo.setFont(new Font("Serif", Font.BOLD, 24));
-        navbar.add(logo);
+  lastScroll = currentScroll;
+});
 
-        String[] menu = {"Home", "About", "Menu", "Reviews", "Reservation", "Contact"};
-        for (String item : menu) {
-            JButton btn = new JButton(item);
-            btn.setBackground(dark);
-            btn.setForeground(Color.WHITE);
-            btn.setBorderPainted(false);
-            navbar.add(btn);
-        }
 
-        mainPanel.add(navbar, BorderLayout.NORTH);
+// ── ACTIVE NAV LINK on Scroll ──
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.nav-link');
 
-        // CENTER PANEL
-        JPanel centerPanel = new JPanel();
-        centerPanel.setLayout(new BoxLayout(centerPanel, BoxLayout.Y_AXIS));
-        centerPanel.setBackground(cream);
+window.addEventListener('scroll', () => {
+  let current = '';
 
-        // HERO SECTION
-        JPanel hero = new JPanel();
-        hero.setBackground(red);
-        hero.setPreferredSize(new Dimension(1000, 250));
-        hero.setLayout(new GridLayout(3, 1));
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 100;
+    if (window.scrollY >= sectionTop) {
+      current = section.getAttribute('id');
+    }
+  });
 
-        JLabel title = new JLabel("Taste of Authentic Italy", SwingConstants.CENTER);
-        title.setForeground(Color.WHITE);
-        title.setFont(new Font("Serif", Font.BOLD, 36));
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === '#' + current) {
+      link.classList.add('active');
+    }
+  });
+});
 
-        JLabel subtitle = new JLabel("Fresh ingredients. Unforgettable flavors.", SwingConstants.CENTER);
-        subtitle.setForeground(Color.WHITE);
-        subtitle.setFont(new Font("SansSerif", Font.PLAIN, 18));
 
-        JButton orderBtn = new JButton("Explore Menu");
-        orderBtn.setBackground(gold);
-        orderBtn.setForeground(Color.WHITE);
+// ── RESERVATION FORM VALIDATION ──
+const bookBtn = document.querySelector('#reservation .btn-gold');
 
-        hero.add(new JLabel(""));
-        hero.add(title);
-        hero.add(subtitle);
+if (bookBtn) {
+  bookBtn.addEventListener('click', () => {
+    const name  = document.querySelector('#reservation input[placeholder="Your Name"]').value.trim();
+    const phone = document.querySelector('#reservation input[placeholder="Phone Number"]').value.trim();
+    const date  = document.querySelector('#reservation input[type="date"]').value;
 
-        centerPanel.add(hero);
-
-        // ABOUT SECTION
-        JPanel about = new JPanel();
-        about.setBackground(Color.WHITE);
-        about.setLayout(new GridLayout(2,1));
-        about.setBorder(BorderFactory.createTitledBorder("About Us"));
-
-        JLabel aboutText = new JLabel(
-        "<html><center>Italian Foodiess brings authentic Italian cuisine.<br>" +
-        "Wood-fired pizzas, creamy pasta, and fresh ingredients daily.</center></html>",
-        SwingConstants.CENTER);
-
-        about.add(aboutText);
-        centerPanel.add(about);
-
-        // MENU SECTION
-        JPanel menuPanel = new JPanel();
-        menuPanel.setBackground(cream);
-        menuPanel.setLayout(new GridLayout(4, 2, 10, 10));
-        menuPanel.setBorder(BorderFactory.createTitledBorder("Our Special Menu"));
-
-        menuPanel.add(new JLabel("🍕 Chicken Pizza"));
-        menuPanel.add(new JLabel("₹350"));
-
-        menuPanel.add(new JLabel("🍝 Chicken Pasta"));
-        menuPanel.add(new JLabel("₹350"));
-
-        menuPanel.add(new JLabel("🥗 Italian Noodles"));
-        menuPanel.add(new JLabel("₹280"));
-
-        menuPanel.add(new JLabel("🍕 Margherita Pizza"));
-        menuPanel.add(new JLabel("₹250"));
-
-        centerPanel.add(menuPanel);
-
-        // RESERVATION
-        JPanel reserve = new JPanel();
-        reserve.setBackground(Color.WHITE);
-        reserve.setBorder(BorderFactory.createTitledBorder("Reserve Table"));
-
-        JTextField name = new JTextField(10);
-        JTextField phone = new JTextField(10);
-        JButton book = new JButton("Confirm Reservation");
-        book.setBackground(gold);
-        book.setForeground(Color.WHITE);
-
-        reserve.add(new JLabel("Name:"));
-        reserve.add(name);
-        reserve.add(new JLabel("Phone:"));
-        reserve.add(phone);
-        reserve.add(book);
-
-        centerPanel.add(reserve);
-
-        // FOOTER
-        JPanel footer = new JPanel();
-        footer.setBackground(dark);
-
-        JLabel contact = new JLabel("📍 MG Road, Nagpur | ☎ +91 98765 43210");
-        contact.setForeground(Color.WHITE);
-
-        footer.add(contact);
-
-        mainPanel.add(new JScrollPane(centerPanel), BorderLayout.CENTER);
-        mainPanel.add(footer, BorderLayout.SOUTH);
-
-        add(mainPanel);
-        setVisible(true);
+    if (!name || !phone || !date) {
+      alert('⚠️ Please fill in all fields before booking!');
+      return;
     }
 
-    public static void main(String[] args) {
-        new ItalianFoodiess();
+    if (!/^[0-9]{10}$/.test(phone)) {
+      alert('⚠️ Please enter a valid 10-digit phone number.');
+      return;
     }
+
+    alert(`✅ Table booked for ${name} on ${date}! We'll confirm on ${phone}.`);
+  });
 }
+
+
+// ── SEARCH BAR FILTER (Menu Cards) ──
+const searchInput = document.querySelector('input[type="search"]');
+
+if (searchInput) {
+  searchInput.addEventListener('input', () => {
+    const query = searchInput.value.toLowerCase();
+    const cards = document.querySelectorAll('#food .card');
+
+    cards.forEach(card => {
+      const title = card.querySelector('h5').textContent.toLowerCase();
+      card.closest('.col-md-4').style.display = title.includes(query) ? '' : 'none';
+    });
+  });
+}
+
+
+// ── SMOOTH SCROLL for Nav Links ──
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function (e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+
+const backToTop = document.createElement('button');
+backToTop.innerHTML = '↑';
+backToTop.style.cssText = `
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #d4a017;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  z-index: 9999;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+  transition: background 0.3s;
+`;
+document.body.appendChild(backToTop);
+
+window.addEventListener('scroll', () => {
+  backToTop.style.display = window.scrollY > 400 ? 'block' : 'none';
+});
+
+backToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
