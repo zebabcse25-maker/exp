@@ -24,8 +24,6 @@ window.addEventListener('scroll', () => {
   lastScroll = currentScroll;
 });
 
-
-// ── ACTIVE NAV LINK on Scroll ──
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.nav-link');
 
