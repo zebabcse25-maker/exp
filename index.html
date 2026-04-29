@@ -6,13 +6,19 @@
 <title>Italian Foodiess</title>
 
 <link rel="stylesheet" href="file.css">
-<script src="bootstrap.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+html{
+  scroll-behavior:smooth;
+}
+</style>
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg sticky-top">
 <div class="container">
 <a class="navbar-brand" href="#">🍝 Italian Foodiess</a>
@@ -23,16 +29,17 @@
 
 <div class="collapse navbar-collapse" id="menu">
 <ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="#" onclick="navigateTo('about.html')">About</a></li>
-<li class="nav-item"><a class="nav-link" href="#" onclick="navigateTo('menu.html')">Menu</a></li>
-<li class="nav-item"><a class="nav-link" href="#" onclick="navigateTo('reservation.html')">Book</a></li>
-<li class="nav-item"><a class="nav-link" href="#" onclick="navigateTo('contact.html')">Contact</a></li>
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#food">Menu</a></li>
+<li class="nav-item"><a class="nav-link" href="#reservation">Book</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 </ul>
 </div>
 </div>
 </nav>
 
+<!-- HOME -->
 <section id="home">
 <div class="overlay text-center">
 <div class="container">
@@ -43,6 +50,7 @@
 </div>
 </section>
 
+<!-- ABOUT -->
 <section id="about" class="py-5">
 <div class="container text-center">
 <h2 class="section-title">About Us</h2>
@@ -53,6 +61,7 @@ cozy ambience and memorable dining experience.
 </div>
 </section>
 
+<!-- MENU -->
 <section id="food" class="py-5">
 <div class="container">
 <h2 class="section-title text-center mb-4">Our Special Menu</h2>
@@ -93,22 +102,31 @@ cozy ambience and memorable dining experience.
 </div>
 </section>
 
+<!-- RESERVATION -->
 <section id="reservation">
 <div class="container">
 <h2 class="section-title text-center mb-4">Reserve Table</h2>
 
 <div class="row justify-content-center">
 <div class="col-md-6">
-<input type="text" class="form-control mb-3" placeholder="Your Name">
-<input type="text" class="form-control mb-3" placeholder="Phone Number">
-<input type="date" class="form-control mb-3">
-<button class="btn-gold w-100">Book Now</button>
+
+<form onsubmit="return confirmOrder()">
+<input type="text" id="name" class="form-control mb-3" placeholder="Your Name" required>
+<input type="text" class="form-control mb-3" placeholder="Phone Number" required>
+<input type="date" class="form-control mb-3" required>
+
+<button type="submit" class="btn-gold w-100">Book Now</button>
+</form>
+
+<p id="msg" class="text-center mt-3"></p>
+
 </div>
 </div>
 
 </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
 <div class="container text-center">
 <h2 class="section-title text-white">Contact Us</h2>
@@ -127,8 +145,19 @@ cozy ambience and memorable dining experience.
 </div>
 </section>
 
+<!-- JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<script src="bootstrap.js"></script>
+<script>
+function confirmOrder() {
+    let username = document.getElementById("name").value;
+
+    document.getElementById("msg").innerHTML =
+    "✅ Thank You " + username + "! Your table booking is confirmed.";
+
+    return false;
+}
+</script>
+
 </body>
 </html>
