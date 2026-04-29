@@ -1,4 +1,4 @@
-/* ROOT COLORS */
+
 :root{
   --red:#c0392b;
   --gold:#d4a017;
@@ -6,7 +6,6 @@
   --cream:#fdf6ec;
 }
 
-/* RESET */
 *{
   margin:0;
   padding:0;
@@ -14,21 +13,20 @@
   scroll-behavior:smooth;
 }
 
-/* BODY */
 body{
-  font-family: Arial, sans-serif;
-  background: var(--cream);
+  font-family:Arial,sans-serif;
+  background:var(--cream);
   color:#333;
 }
 
-/* NAVBAR */
+/* Navbar */
 .navbar{
-  background: var(--dark) !important;
+  background:var(--dark) !important;
   padding:15px 0;
 }
 
 .navbar-brand{
-  color: var(--gold) !important;
+  color:var(--gold) !important;
   font-size:28px;
   font-weight:bold;
 }
@@ -40,10 +38,10 @@ body{
 }
 
 .nav-link:hover{
-  color: var(--gold) !important;
+  color:var(--gold) !important;
 }
 
-/* HERO SECTION */
+/* Hero Section */
 #home{
   min-height:100vh;
   background:url("https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1400") center/cover no-repeat;
@@ -67,9 +65,9 @@ body{
   margin-bottom:25px;
 }
 
-/* BUTTON */
+/* Buttons */
 .btn-gold{
-  background: var(--gold);
+  background:var(--gold);
   color:#fff;
   padding:12px 28px;
   border:none;
@@ -84,21 +82,20 @@ body{
   color:#fff;
 }
 
-/* SECTION TITLES */
+/* Sections */
 .section-title{
-  color: var(--red);
+  color:var(--red);
   font-weight:bold;
   margin-bottom:20px;
 }
 
-/* SECTIONS SPACING */
 #about,
 #food,
 #reservation{
   padding:70px 0;
 }
 
-/* CARDS */
+/* Cards */
 .card{
   border:none;
   border-radius:12px;
@@ -116,11 +113,11 @@ body{
 }
 
 .card-body h5{
-  color: var(--red);
+  color:var(--red);
   font-weight:bold;
 }
 
-/* RESERVATION */
+/* Reservation */
 #reservation{
   background:#fff;
 }
@@ -130,9 +127,9 @@ body{
   border-radius:8px;
 }
 
-/* CONTACT */
+/* Contact */
 #contact{
-  background: var(--dark);
+  background:var(--dark);
   color:#fff;
   padding:60px 0;
 }
@@ -145,9 +142,8 @@ body{
   margin:8px 0;
 }
 
-/* SOCIAL ICONS */
 .footer a{
-  color: var(--gold);
+  color:var(--gold);
   font-size:22px;
   margin:0 10px;
   text-decoration:none;
@@ -156,10 +152,4 @@ body{
 
 .footer a:hover{
   color:#fff;
-}
-
-/* MESSAGE TEXT */
-#msg{
-  font-weight:bold;
-  color:green;
 }
