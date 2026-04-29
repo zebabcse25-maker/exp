@@ -1,7 +1,4 @@
-// Navigation function - JavaScript se page navigate karega
-function navigateTo(page) {
-    window.location.href = page;
-}
+
 
 // Confirm order function
 function confirmOrder() {
