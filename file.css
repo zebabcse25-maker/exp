@@ -4,22 +4,17 @@
 --dark:#1a1a1a;
 --cream:#fdf6ec;
 }
-
 *{scroll-behavior:smooth;}
-
 body{
 font-family:'Lato',sans-serif;
 background:var(--cream);
 color:var(--dark);
 overflow-x:hidden;
 }
-
-/* Navbar */
 .navbar{
 background:#1a1a1a;
 padding:15px 0;
 }
-
 .navbar-brand{
 font-family:'Playfair Display',serif;
 color:var(--gold)!important;
@@ -31,30 +26,24 @@ color:#fff!important;
 font-size:.85rem;
 text-transform:uppercase;
 }
-
 .nav-link:hover{
 color:var(--gold)!important;
 }
-
-/* Hero */
 .carousel-item{
 min-height:90vh;
 background-size:cover;
 background-position:center;
 position:relative;
 }
-
 .carousel-item::before{
 content:'';
 position:absolute;
 inset:0;
 background:rgba(0,0,0,.55);
 }
-
 .slide-1{background:url('hero1.jpg');}
 .slide-2{background:url('hero2.jpg');}
 .slide-3{background:url('hero3.jpg');}
-
 .carousel-caption-custom{
 position:absolute;
 top:50%;
