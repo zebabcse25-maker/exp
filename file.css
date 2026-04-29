@@ -53,21 +53,16 @@ text-align:center;
 width:90%;
 z-index:2;
 }
-
 .hero-title{
 font-family:'Playfair Display',serif;
 font-size:4rem;
 color:#fff;
 }
-
 .hero-title span{color:var(--gold);}
-
 .hero-sub{
 color:#ddd;
 margin-bottom:25px;
 }
-
-/* Buttons */
 .btn-gold{
 background:var(--gold);
 color:#fff;
@@ -89,49 +84,37 @@ border-radius:30px;
 color:#fff;
 text-decoration:none;
 }
-
-/* Search */
 .search-wrap{
 background:var(--dark);
 padding:20px 0;
 }
-
 .search-btn{
 background:var(--gold);
 color:#fff;
 border:none;
 padding:10px 25px;
 }
-
-/* Sections */
 section{
 padding:80px 0;
 }
-
 .section-title{
 font-family:'Playfair Display',serif;
 font-size:2.5rem;
 }
-
 .section-title span{
 color:var(--red);
 }
-
 .divider{
 width:60px;
 height:3px;
 background:var(--gold);
 margin:15px auto 40px;
 }
-
-/* About */
 .about-img{
 width:100%;
 border-radius:15px;
 box-shadow:15px 15px 0 var(--gold);
 }
-
-/* Menu */
 .menu-slide,
 .testi-card,
 .res-card,
@@ -141,33 +124,26 @@ border-radius:18px;
 padding:30px;
 box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
-
 .menu-slide img{
 width:100%;
 height:350px;
 object-fit:cover;
 }
-
 .menu-slide-price,
 .price-tag{
 color:var(--red);
 font-weight:700;
 font-size:1.3rem;
 }
-
-/* Reservation */
 #reservation{
 background:linear-gradient(135deg,#1a0a00,#3b1a0a);
 }
-
 .res-card input,
 .res-card select{
 padding:12px;
 border-radius:8px;
 border:1px solid #ddd;
 }
-
-/* Contact */
 #contact{
 background:var(--dark);
 color:#fff;
