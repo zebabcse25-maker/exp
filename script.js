@@ -1,15 +1,19 @@
+import java.io.IOException;
+import javax.servlet.*;
+import javax.servlet.http.*;
 
-// Navigation function - JavaScript se page navigate karega
-function navigateTo(page) {
-    window.location.href = page;
-}
+public class PageServlet extends HttpServlet {
 
-// Confirm order function
-function confirmOrder() {
-    let username = document.getElementById("name").value;
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
 
-    document.getElementById("msg").innerHTML =
-    "✅ Thank You " + username + "! Your table booking is confirmed.";
+        String page = request.getParameter("page");
 
-    return false;
+        if (page == null || page.equals("")) {
+            page = "index.html";
+        }
+
+        RequestDispatcher dispatcher = request.getRequestDispatcher(page);
+        dispatcher.forward(request, response);
+    }
 }
