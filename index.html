@@ -12,6 +12,7 @@
 
 <body>
 
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg sticky-top">
 <div class="container">
 <a class="navbar-brand" href="#">🍝 Italian Foodiess</a>
@@ -22,16 +23,33 @@
 
 <div class="collapse navbar-collapse" id="menu">
 <ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-<li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-<li class="nav-item"><a class="nav-link" href="reservation.html">Book</a></li>
-<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+<li class="nav-item">
+<a class="nav-link" href="PageServlet?page=index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="PageServlet?page=about.html">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="PageServlet?page=menu.html">Menu</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="PageServlet?page=reservation.html">Book</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="PageServlet?page=contact.html">Contact</a>
+</li>
+
 </ul>
 </div>
 </div>
 </nav>
 
+<!-- HERO -->
 <section id="home">
 <div class="overlay text-center">
 <div class="container">
@@ -42,23 +60,18 @@
 </div>
 </section>
 
+<!-- ABOUT -->
 <section id="about" class="py-5">
 <div class="container text-center">
 <h2 class="section-title">About Us</h2>
 <p>
 Italian Foodiess brings authentic Italian taste with fresh ingredients,
-cozy ambience and memorable dining experience.Welcome to our Italian restaurant, where tradition blends beautifully with taste. We bring you the authentic flavors of Italy through every dish, prepared with fresh ingredients, time-honored recipes, and a passion for excellent food. From classic pasta and wood-fired pizzas to rich and delightful desserts, every bite reflects the warmth and heritage of Italian cuisine. Our aim is to offer not just a meal, but a memorable dining experience filled with comfort, quality, and genuine hospitality. Whether you are dining with family, friends, or celebrating a special occasion, we promise delicious food and a cozy atmosphere that feels like home.
-
-1. Bringing you the true taste of Italy with fresh ingredients and classic recipes, served with love and care.
-2. Experience authentic Italian flavors in every bite, from delicious pasta to perfectly baked pizzas, in a warm and cozy setting.
-3. A place where Italian tradition meets exceptional taste, offering freshly prepared dishes and a welcoming atmosphere.
-4. Enjoy classic Italian cuisine made with passion, fresh ingredients, and flavors that leave you satisfied every time.
-5. Serving authentic Italian dishes with a modern touch, where tradition and taste come together in every bite.
-
+cozy ambience and memorable dining experience.
 </p>
 </div>
 </section>
 
+<!-- FOOD -->
 <section id="food" class="py-5">
 <div class="container">
 <h2 class="section-title text-center mb-4">Our Special Menu</h2>
@@ -99,6 +112,7 @@ cozy ambience and memorable dining experience.Welcome to our Italian restaurant,
 </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
 <div class="container text-center">
 <h2 class="section-title text-white">Contact Us</h2>
@@ -119,6 +133,5 @@ cozy ambience and memorable dining experience.Welcome to our Italian restaurant,
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<script src="bootstrap.js"></script>
 </body>
 </html>
