@@ -1,15 +1,15 @@
 
-// Reservation form confirm function
-function confirmOrder() {
-    let username = document.getElementById("name").value.trim();
+// Navigation function - JavaScript se page navigate karega
+function navigateTo(page) {
+    window.location.href = page;
+}
 
-    if(username === "") {
-        alert("Please enter your name!");
-        return false;
-    }
+// Confirm order function
+function confirmOrder() {
+    let username = document.getElementById("name").value;
 
     document.getElementById("msg").innerHTML =
-        "✅ Thank You " + username + "! Your table booking is confirmed.";
+    "✅ Thank You " + username + "! Your table booking is confirmed.";
 
-    return false; // page reload hone se rokta hai
+    return false;
 }
