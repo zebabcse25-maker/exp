@@ -5,19 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Italian Foodiess</title>
 
-<link rel="stylesheet" href="file.css">
+<link rel="stylesheet" href="style.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-<style>
-html{
-  scroll-behavior:smooth;
-}
-</style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg sticky-top">
 <div class="container">
 <a class="navbar-brand" href="#">🍝 Italian Foodiess</a>
@@ -28,17 +22,16 @@ html{
 
 <div class="collapse navbar-collapse" id="menu">
 <ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-<li class="nav-item"><a class="nav-link" href="#food">Menu</a></li>
-<li class="nav-item"><a class="nav-link" href="#reservation">Book</a></li>
-<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+<li class="nav-item"><a class="nav-link" href="reservation.html">Book</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 </ul>
 </div>
 </div>
 </nav>
 
-<!-- HOME -->
 <section id="home">
 <div class="overlay text-center">
 <div class="container">
@@ -49,7 +42,6 @@ html{
 </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about" class="py-5">
 <div class="container text-center">
 <h2 class="section-title">About Us</h2>
@@ -60,7 +52,6 @@ cozy ambience and memorable dining experience.
 </div>
 </section>
 
-<!-- MENU -->
 <section id="food" class="py-5">
 <div class="container">
 <h2 class="section-title text-center mb-4">Our Special Menu</h2>
@@ -101,31 +92,6 @@ cozy ambience and memorable dining experience.
 </div>
 </section>
 
-<!-- RESERVATION -->
-<section id="reservation">
-<div class="container">
-<h2 class="section-title text-center mb-4">Reserve Table</h2>
-
-<div class="row justify-content-center">
-<div class="col-md-6">
-
-<form onsubmit="return confirmOrder()">
-<input type="text" id="name" class="form-control mb-3" placeholder="Your Name" required>
-<input type="text" class="form-control mb-3" placeholder="Phone Number" required>
-<input type="date" class="form-control mb-3" required>
-
-<button type="submit" class="btn-gold w-100">Book Now</button>
-</form>
-
-<p id="msg" class="text-center mt-3"></p>
-
-</div>
-</div>
-
-</div>
-</section>
-
-<!-- CONTACT -->
 <section id="contact">
 <div class="container text-center">
 <h2 class="section-title text-white">Contact Us</h2>
@@ -144,7 +110,8 @@ cozy ambience and memorable dining experience.
 </div>
 </section>
 
-<script src="bootstrap.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
+<script src="file.js"></script>
 </body>
 </html>
