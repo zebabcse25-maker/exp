@@ -1,58 +1,73 @@
 
+/* file.css */
+
 :root{
   --red:#c0392b;
   --gold:#d4a017;
   --dark:#1a1a1a;
   --cream:#fdf6ec;
 }
+
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
   scroll-behavior:smooth;
 }
+
 body{
   font-family:Arial,sans-serif;
   background:var(--cream);
   color:#333;
 }
 
+/* Navbar */
 .navbar{
   background:var(--dark) !important;
   padding:15px 0;
 }
+
 .navbar-brand{
   color:var(--gold) !important;
   font-size:28px;
   font-weight:bold;
 }
+
 .nav-link{
   color:#fff !important;
   margin-left:12px;
   transition:0.3s;
 }
+
 .nav-link:hover{
   color:var(--gold) !important;
 }
+
+/* Hero Section */
 #home{
   min-height:100vh;
   background:url("https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1400") center/cover no-repeat;
   display:flex;
   align-items:center;
 }
+
 .overlay{
   width:100%;
   background:rgba(0,0,0,0.65);
   padding:120px 0;
   color:#fff;
 }
+
 .overlay h1{
   margin-bottom:15px;
 }
+
 .overlay p{
   font-size:20px;
   margin-bottom:25px;
 }
+
+/* Buttons */
 .btn-gold{
   background:var(--gold);
   color:#fff;
@@ -68,17 +83,21 @@ body{
   background:#b8860b;
   color:#fff;
 }
+
+/* Sections */
 .section-title{
   color:var(--red);
   font-weight:bold;
   margin-bottom:20px;
 }
+
 #about,
 #food,
 #reservation{
   padding:70px 0;
 }
 
+/* Cards */
 .card{
   border:none;
   border-radius:12px;
@@ -99,24 +118,32 @@ body{
   color:var(--red);
   font-weight:bold;
 }
+
+/* Reservation */
 #reservation{
   background:#fff;
 }
+
 .form-control{
   padding:12px;
   border-radius:8px;
 }
+
+/* Contact */
 #contact{
   background:var(--dark);
   color:#fff;
   padding:60px 0;
 }
+
 #contact .section-title{
   color:#fff;
 }
+
 #contact p{
   margin:8px 0;
 }
+
 .footer a{
   color:var(--gold);
   font-size:22px;
