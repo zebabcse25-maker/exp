@@ -5,14 +5,12 @@
   --dark:#1a1a1a;
   --cream:#fdf6ec;
 }
-
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
   scroll-behavior:smooth;
 }
-
 body{
   font-family:Arial,sans-serif;
   background:var(--cream);
@@ -94,7 +92,6 @@ body{
   padding:70px 0;
 }
 
-/* Cards */
 .card{
   border:none;
   border-radius:12px;
@@ -125,7 +122,6 @@ body{
   border-radius:8px;
 }
 
-/* Contact */
 #contact{
   background:var(--dark);
   color:#fff;
