@@ -4,31 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Italian Foodiess</title>
+
+<link rel="stylesheet" href="style.css">
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
-<style>
-:root{--red:#c0392b;--gold:#d4a017;--dark:#1a1a1a;--cream:#fdf6ec;}
-body{font-family:Arial,sans-serif;background:var(--cream);}
-.navbar{background:var(--dark);}
-.navbar-brand,.nav-link:hover{color:var(--gold)!important;}
-.nav-link{color:#fff!important;}
-#home{min-height:100vh;background:url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1400')center/cover;display:flex;align-items:center;color:#fff;}
-.overlay{background:rgba(0,0,0,.65);width:100%;padding:100px 0;}
-.btn-gold{background:var(--gold);color:#fff;border:none;padding:10px 25px;border-radius:30px;text-decoration:none;}
-.section-title{color:var(--red);font-weight:bold;}
-.card img{height:220px;object-fit:cover;}
-#reservation{background:#fff;padding:60px 0;}
-#contact{background:var(--dark);color:#fff;padding:50px 0;}
-.footer a{color:var(--gold);margin:0 10px;font-size:22px;}
-</style>
 </head>
+
 <body>
 
 <nav class="navbar navbar-expand-lg sticky-top">
 <div class="container">
 <a class="navbar-brand" href="#">🍝 Italian Foodiess</a>
-<button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#menu"><span class="navbar-toggler-icon"></span></button>
+
+<button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
 <div class="collapse navbar-collapse" id="menu">
 <ul class="navbar-nav ms-auto">
 <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
@@ -54,13 +46,17 @@ body{font-family:Arial,sans-serif;background:var(--cream);}
 <section id="about" class="py-5">
 <div class="container text-center">
 <h2 class="section-title">About Us</h2>
-<p>Italian Foodiess brings authentic Italian taste with fresh ingredients, cozy ambience and memorable dining experience.</p>
+<p>
+Italian Foodiess brings authentic Italian taste with fresh ingredients,
+cozy ambience and memorable dining experience.
+</p>
 </div>
 </section>
 
 <section id="food" class="py-5">
 <div class="container">
 <h2 class="section-title text-center mb-4">Our Special Menu</h2>
+
 <div class="row g-4">
 
 <div class="col-md-4">
@@ -100,20 +96,23 @@ body{font-family:Arial,sans-serif;background:var(--cream);}
 <section id="reservation">
 <div class="container">
 <h2 class="section-title text-center mb-4">Reserve Table</h2>
+
 <div class="row justify-content-center">
 <div class="col-md-6">
-<input class="form-control mb-3" placeholder="Your Name">
-<input class="form-control mb-3" placeholder="Phone Number">
+<input type="text" class="form-control mb-3" placeholder="Your Name">
+<input type="text" class="form-control mb-3" placeholder="Phone Number">
 <input type="date" class="form-control mb-3">
 <button class="btn-gold w-100">Book Now</button>
 </div>
 </div>
+
 </div>
 </section>
 
 <section id="contact">
 <div class="container text-center">
 <h2 class="section-title text-white">Contact Us</h2>
+
 <p><i class="bi bi-telephone-fill"></i> +91 98765 43210</p>
 <p><i class="bi bi-envelope-fill"></i> itala@gmail.com</p>
 <p><i class="bi bi-geo-alt-fill"></i> MG Road, Nagpur</p>
@@ -129,5 +128,6 @@ body{font-family:Arial,sans-serif;background:var(--cream);}
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
