@@ -130,3 +130,11 @@ td{
   text-align:center;
   vertical-align:middle;
 }
+.menu .row{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+}
+.menu .card{
+  width:300px;
+}
