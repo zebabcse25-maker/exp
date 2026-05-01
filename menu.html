@@ -50,6 +50,34 @@ padding-bottom:20px;
 font-size:20px;
 }
 
+/* TABLE DESIGN */
+.table-box{
+margin-top:60px;
+display:flex;
+justify-content:center;
+}
+
+table{
+width:80%;
+border-collapse:collapse;
+background:white;
+box-shadow:0 0 15px #ddd;
+}
+
+th, td{
+padding:15px;
+border:1px solid #ddd;
+}
+
+th{
+background:#7a3f3f;
+color:white;
+}
+
+tr:hover{
+background:#ffe5b4;
+}
+
 </style>
 
 </head>
@@ -78,6 +106,58 @@ font-size:20px;
 <h3>Lasagna</h3>
 <p>₹350</p>
 </div>
+
+</div>
+
+<!-- MENU TABLE -->
+<div class="table-box">
+
+<table>
+<tr>
+<th>Category</th>
+<th>Item</th>
+<th>Price</th>
+</tr>
+
+<tr>
+<td rowspan="3">Pizza</td>
+<td>Chicken Pizza</td>
+<td>₹250</td>
+</tr>
+<tr>
+<td>Margherita Pizza</td>
+<td>₹220</td>
+</tr>
+<tr>
+<td>Veg Pizza</td>
+<td>₹230</td>
+</tr>
+
+<tr>
+<td rowspan="3">Pasta</td>
+<td>White Sauce Pasta</td>
+<td>₹300</td>
+</tr>
+<tr>
+<td>Red Sauce Pasta</td>
+<td>₹280</td>
+</tr>
+<tr>
+<td>Cheese Pasta</td>
+<td>₹320</td>
+</tr>
+
+<tr>
+<td rowspan="2">Special</td>
+<td>Lasagna</td>
+<td>₹350</td>
+</tr>
+<tr>
+<td>Garlic Bread</td>
+<td>₹150</td>
+</tr>
+
+</table>
 
 </div>
 
