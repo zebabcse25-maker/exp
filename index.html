@@ -14,7 +14,6 @@
 
 <nav class="navbar navbar-expand-lg sticky-top">
 <div class="container">
-
 <a class="navbar-brand" href="#">Italian Foodiess</a>
 
 <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -22,26 +21,12 @@
 </button>
 
 <div class="collapse navbar-collapse" id="menu">
-
-<ul class="navbar-nav ms-auto align-items-center">
-<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-<li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-<li class="nav-item"><a class="nav-link" href="book.html">Book</a></li>
-<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-
-
-<li class="nav-item ms-3">
-<form class="d-flex">
-<input class="form-control me-2" type="search" placeholder="Search Food">
-<button class="btn btn-warning" type="submit">
-<i class="bi bi-search"></i>
-</button>
-</form>
-</li>
-
+<ul class="navbar-nav ms-auto">
+<li><a class="nav-link" href="#home">Home</a></li>
+<li><a class="nav-link" href="#about">About</a></li>
+<li><a class="nav-link" href="#food">Menu</a></li>
+<li><a class="nav-link" href="#contact">Contact</a></li>
 </ul>
-
 </div>
 </div>
 </nav>
@@ -49,86 +34,187 @@
 <section id="home">
 <div class="overlay text-center">
 <div class="container">
-<h1 class="display-3 fw-bold">Taste of Italy</h1>
+<h1>Taste of Italy</h1>
 <p>Fresh Pizza • Pasta • Family Dining</p>
 <a href="#food" class="btn-gold">Explore Menu</a>
 </div>
 </div>
 </section>
 
-<section id="about" class="py-5">
-<div class="container text-center">
+<section id="about" class="text-center">
 <h2 class="section-title">About Us</h2>
-<p>
-Italian Foodiess brings authentic Italian taste with fresh ingredients,
-cozy ambience and memorable dining experience.Italian Foodiess is a modern and responsive restaurant website designed using HTML, CSS,
-  Bootstrap 5, and JavaScript. It presents an authentic Italian dining experience through an attractive and user-friendly interface. 
-  The website includes a stylish navigation bar with search functionality, a hero banner showcasing the theme “Taste of Italy,” an About Us section describing the restaurant, a special menu with food items and prices, and a contact section with phone, email, address, and social media links. With its elegant layout, mobile-friendly design, and visually appealing food cards, the website helps promote the restaurant online while providing customers with easy access to menu and contact information.
+<p>Authentic Italian food with modern experience.</p>
+</section>
 
-</p>
+<section class="py-5 text-center">
+<div class="container">
+<h2 class="section-title">Food Gallery</h2>
+<div class="row">
+<div class="col-md-4 mb-3">
+<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" class="img-fluid rounded">
+</div>
+<div class="col-md-4 mb-3">
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349" class="img-fluid rounded">
+</div>
+<div class="col-md-4 mb-3">
+<img src="https://images.unsplash.com/photo-1562967916-eb82221dfb36" class="img-fluid rounded">
+</div>
+</div>
 </div>
 </section>
 
-<section id="food" class="py-5">
-<div class="container">
-<h2 class="section-title text-center mb-4">Our Special Menu</h2>
+<div class="text-center mb-4">
+<button class="btn btn-dark filter-btn" data-filter="all">All</button>
+<button class="btn btn-success filter-btn" data-filter="veg">Veg</button>
+<button class="btn btn-danger filter-btn" data-filter="nonveg">Non-Veg</button>
+</div>
 
+<section id="food" class="container">
 <div class="row g-4">
 
-<div class="col-md-4">
-<div class="card shadow">
-<img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600" class="card-img-top">
+<div class="col-md-4 food-item nonveg">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38">
 <div class="card-body text-center">
 <h5>Chicken Pizza</h5>
 <p>₹250</p>
+<button class="btn btn-warning add-cart">Add to Cart</button>
 </div>
 </div>
 </div>
 
-<div class="col-md-4">
-<div class="card shadow">
-<img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600" class="card-img-top">
+<div class="col-md-4 food-item veg">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9">
 <div class="card-body text-center">
 <h5>Pasta</h5>
 <p>₹300</p>
+<button class="btn btn-warning add-cart">Add to Cart</button>
 </div>
 </div>
 </div>
 
-<div class="col-md-4">
-<div class="card shadow">
-<img src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=600" class="card-img-top">
+<div class="col-md-4 food-item veg">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb">
 <div class="card-body text-center">
 <h5>Noodles</h5>
 <p>₹280</p>
+<button class="btn btn-warning add-cart">Add to Cart</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 food-item nonveg">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1604908176997-431b0b06f0b8">
+<div class="card-body text-center">
+<h5>Burger</h5>
+<p>₹200</p>
+<button class="btn btn-warning add-cart">Add to Cart</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 food-item veg">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
+<div class="card-body text-center">
+<h5>French Fries</h5>
+<p>₹150</p>
+<button class="btn btn-warning add-cart">Add to Cart</button>
 </div>
 </div>
 </div>
 
 </div>
+</section>
+
+<section class="py-5 text-center">
+<div class="container">
+<h2 class="section-title">Customer Reviews</h2>
+<p>⭐⭐⭐⭐⭐ "Amazing taste and service!"</p>
+<p>⭐⭐⭐⭐ "Loved the pizza quality!"</p>
+<p>⭐⭐⭐⭐⭐ "Best restaurant experience!"</p>
 </div>
 </section>
 
 <section id="contact">
 <div class="container text-center">
-<h2 class="section-title text-white">Contact Us</h2>
 
-<p><i class="bi bi-telephone-fill"></i> +91 98765 43210</p>
-<p><i class="bi bi-envelope-fill"></i> itala@gmail.com</p>
-<p><i class="bi bi-geo-alt-fill"></i> MG Road, Nagpur</p>
+<h2 class="section-title text-white">Contact Us</h2>
+<p>📞 +91 98765 43210</p>
+<p>📧 itala@gmail.com</p>
+
+<iframe src="https://maps.google.com/maps?q=Nagpur&output=embed" width="100%" height="300"></iframe>
+
+<br><br>
+
+<input type="text" id="name" placeholder="Your Name" class="form-control mb-2">
+<input type="email" placeholder="Your Email" class="form-control mb-2">
+<textarea class="form-control mb-2"></textarea>
+<button onclick="sendMsg()" class="btn btn-warning">Send</button>
 
 <div class="footer mt-3">
-<a href="#"><i class="bi bi-instagram"></i></a>
-<a href="#"><i class="bi bi-facebook"></i></a>
-<a href="#"><i class="bi bi-twitter"></i></a>
+<i class="bi bi-instagram"></i>
+<i class="bi bi-facebook"></i>
+<i class="bi bi-twitter"></i>
 </div>
 
-<p class="mt-3">© 2026 Italian Foodiess</p>
+<hr>
+<p>Opening Hours: 10 AM - 11 PM</p>
+<p>Location: MG Road, Nagpur</p>
+<p class="mt-3">© 2026 Italian Foodiess | All Rights Reserved</p>
+
 </div>
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<script src="bootstrap.js"></script>
+<script>
+document.querySelectorAll(".filter-btn").forEach(btn=>{
+  btn.addEventListener("click", ()=>{
+    let filter = btn.dataset.filter;
+    document.querySelectorAll(".food-item").forEach(item=>{
+      item.style.display = (filter==="all" || item.classList.contains(filter)) ? "block":"none";
+    });
+  });
+});
+
+let count = 0;
+document.querySelectorAll(".add-cart").forEach(btn=>{
+  btn.onclick = ()=>{
+    count++;
+    alert("Added to cart 🛒 Total: "+count);
+  }
+});
+
+function sendMsg(){
+  let name=document.getElementById("name").value;
+  if(name==""){
+    alert("Enter name");
+  } else {
+    alert("Message sent!");
+  }
+}
+
+window.addEventListener("scroll", ()=>{
+  let sections=document.querySelectorAll("section");
+  let links=document.querySelectorAll(".nav-link");
+
+  sections.forEach(sec=>{
+    let top=window.scrollY;
+    let offset=sec.offsetTop-100;
+    let height=sec.offsetHeight;
+    let id=sec.id;
+
+    if(top>=offset && top<offset+height){
+      links.forEach(l=>l.classList.remove("active"));
+      document.querySelector(".nav-link[href*="+id+"]")?.classList.add("active");
+    }
+  });
+});
+</script>
+
 </body>
 </html>
