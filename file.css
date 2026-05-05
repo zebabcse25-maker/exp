@@ -1,180 +1,101 @@
-:root{
-  --red:#c0392b;
-  --gold:#d4a017;
-  --dark:#1a1a1a;
-  --cream:#fdf6ec;
-}
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  scroll-behavior:smooth;
-}
-body{
-  font-family:Arial,sans-serif;
-  background:var(--cream);
-  color:#333;
-}
-.navbar{
-  background:var(--dark) !important;
-  padding:15px 0;
-}
-.navbar-brand{
-  color:var(--gold) !important;
-  font-size:28px;
-  font-weight:bold;
-}
-.nav-link{
-  color:#fff !important;
-  margin-left:12px;
-  transition:0.3s;
-}
-.nav-link:hover{
-  color:var(--gold) !important;
-}
-#home{
-  min-height:100vh;
-  background:url("https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1400") center/cover no-repeat;
-  display:flex;
-  align-items:center;
-}
-.overlay{
-  width:100%;
-  background:rgba(0,0,0,0.65);
-  padding:120px 0;
-  color:#fff;
-}
-.overlay h1{
-  margin-bottom:15px;
-}
-.overlay p{
-  font-size:20px;
-  margin-bottom:25px;
-}
-.btn-gold{
-  background:var(--gold);
-  color:#fff;
-  padding:12px 28px;
-  border:none;
-  border-radius:30px;
-  text-decoration:none;
-  font-weight:bold;
-  transition:0.3s;
-}
-.btn-gold:hover{
-  background:#b8860b;
-  color:#fff;
-}
-.section-title{
-  color:var(--red);
-  font-weight:bold;
-  margin-bottom:20px;
-}
-#about,
-#food,
-#reservation{
-  padding:70px 0;
-}
-.card{
-  border:none;
-  border-radius:12px;
-  overflow:hidden;
-  transition:0.3s;
-}
-.card:hover{
-  transform:translateY(-8px);
-}
-.card img{
-  height:220px;
-  object-fit:cover;
-  display:block;
-  margin:auto;
-}
-.card-body h5{
-  color:var(--red);
-  font-weight:bold;
-}
-#reservation{
-  background:#fff;
-}
-.form-control{
-  padding:12px;
-  border-radius:8px;
-}
-#contact{
-  background:var(--dark);
-  color:#fff;
-  padding:60px 0;
-}
-#contact .section-title{
-  color:#fff;
-}
-#contact p{
-  margin:8px 0;
-}
-.footer a{
-  color:var(--gold);
-  font-size:22px;
-  margin:0 10px;
-  text-decoration:none;
-  transition:0.3s;
-}
-.footer a:hover{
-  color:#fff;
-}
-table img{
-  display:block;
-  margin:auto;
-}
-td{
-  text-align:center;
-  vertical-align:middle;
-}
-.menu .row{
-  display:flex;
-  justify-content:center;
-  gap:30px;
-}
-.menu .card{
-  width:300px;
-}
-#message{
-text-align:center;
-margin-top:20px;
-color:green;
-font-size:22px;
-font-weight:bold;
-}
-.box{
-width:60%;
-margin:100px auto;
-background:#fff;
-padding:40px;
-border-radius:20px;
-box-shadow:0 0 15px #ddd;
+:root{--red:#c0392b;--gold:#d4a017;--dark:#1a1a1a;--cream:#fdf6ec;}
+
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
+
+body{font-family:Arial,sans-serif;background:var(--cream);color:#333;}
+
+.navbar{background:var(--dark)!important;padding:15px 0;}
+
+.navbar-brand{color:var(--gold)!important;font-size:28px;font-weight:bold;}
+
+.nav-link{color:#fff!important;margin-left:12px;transition:.3s;}
+
+.nav-link:hover{color:var(--gold)!important;}
+
+#home{min-height:100vh;background:url("https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1400") center/cover no-repeat;display:flex;align-items:center;}
+
+.overlay{width:100%;background:rgba(0,0,0,.65);padding:120px 0;color:#fff;}
+
+.overlay h1{margin-bottom:15px;}
+
+.overlay p{font-size:20px;margin-bottom:25px;}
+
+.btn-gold{background:var(--gold);color:#fff;padding:12px 28px;border:none;border-radius:30px;text-decoration:none;font-weight:bold;transition:.3s;}
+
+.btn-gold:hover{background:#b8860b;}
+
+.section-title{color:var(--red);font-weight:bold;margin-bottom:20px;}
+
+#about,#food,#reservation{padding:70px 0;}
+
+.card{border:none;border-radius:12px;overflow:hidden;transition:.3s;}
+
+.card:hover{transform:translateY(-8px);}
+
+.card img{height:220px;object-fit:cover;display:block;margin:auto;}
+
+.card-body h5{color:var(--red);font-weight:bold;}
+
+.menu .row{display:flex;justify-content:center;gap:30px;}
+
+.menu .card{width:300px;}
+
+#reservation{background:#fff;}
+
+.form-control{padding:12px;border-radius:8px;}
+
+#contact{background:var(--dark);color:#fff;padding:60px 0;}
+
+#contact .section-title{color:#fff;}
+
+#contact p{margin:8px 0;}
+
+.footer a{color:var(--gold);font-size:22px;margin:0 10px;text-decoration:none;transition:.3s;}
+
+.footer a:hover{color:#fff;}
+
+table img{display:block;margin:auto;}
+
+td{text-align:center;vertical-align:middle;}
+
+#message{text-align:center;margin-top:20px;color:green;font-size:22px;font-weight:bold;}
+
+.box{width:60%;margin:100px auto;background:#fff;padding:40px;border-radius:20px;box-shadow:0 0 15px #ddd;}
+
+.box h1{text-align:center;color:#5a3c3c;margin-bottom:30px;}
+
+.box input{width:100%;padding:12px;margin:12px 0;border:1px solid #ccc;border-radius:8px;}
+
+.book-btn{width:100%;padding:15px;background:#c57b32;border:none;color:#fff;border-radius:30px;margin-top:20px;cursor:pointer;}
+
+@media(max-width:992px){
+.overlay{padding:100px 20px;text-align:center;}
+.menu .card{width:45%;}
+.box{width:80%;margin:60px auto;}
 }
 
-.box h1{
-text-align:center;
-color:#5a3c3c;
-margin-bottom:30px;
+@media(max-width:768px){
+.navbar-brand{font-size:22px;}
+.nav-link{margin-left:0;display:block;text-align:center;padding:8px 0;}
+#home{min-height:80vh;}
+.overlay{padding:80px 15px;text-align:center;}
+.overlay h1{font-size:30px;}
+.overlay p{font-size:16px;}
+.btn-gold{padding:10px 20px;font-size:14px;}
+.section-title{font-size:24px;text-align:center;}
+#about,#food,#reservation{padding:40px 15px;text-align:center;}
+.menu .row{flex-direction:column;align-items:center;}
+.menu .card{width:90%;}
+.card img{height:180px;}
+.box{width:95%;padding:25px;}
 }
 
-.box input{
-width:100%;
-padding:12px;
-margin:12px 0;
-border:1px solid #ccc;
-border-radius:8px;
-}
-
-.book-btn{
-width:100%;
-padding:15px;
-background:#c57b32;
-border:none;
-color:#fff;
-border-radius:30px;
-margin-top:20px;
-cursor:pointer;
+@media(max-width:480px){
+.overlay h1{font-size:24px;}
+.overlay p{font-size:14px;}
+.btn-gold{padding:8px 16px;}
+.card img{height:160px;}
+.box h1{font-size:22px;}
+.box input{padding:10px;}
+.book-btn{padding:12px;font-size:14px;}
 }
