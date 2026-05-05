@@ -1,19 +1,25 @@
-import java.io.IOException;
-import javax.servlet.*;
-import javax.servlet.http.*;
+document.addEventListener("DOMContentLoaded", function(){
 
-public class PageServlet extends HttpServlet {
+const bookingForm = document.getElementById("bookingForm");
+const nameInput = document.getElementById("name");
+const message = document.getElementById("message");
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+let savedName = localStorage.getItem("bookedName");
 
-        String page = request.getParameter("page");
-
-        if (page == null || page.equals("")) {
-            page = "index.html";
-        }
-
-        RequestDispatcher dispatcher = request.getRequestDispatcher(page);
-        dispatcher.forward(request, response);
-    }
+if(savedName){
+message.innerHTML = "Booking Confirmed for " + savedName;
 }
+
+bookingForm.addEventListener("submit", function(e){
+e.preventDefault();
+
+let userName = nameInput.value;
+
+localStorage.setItem("bookedName", userName);
+
+message.innerHTML = "Booking Confirmed for " + userName;
+
+this.reset();
+});
+
+});
