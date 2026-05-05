@@ -1,19 +1,16 @@
-import java.io.IOException;
-import javax.servlet.*;
-import javax.servlet.http.*;
+const bookingForm = document.getElementById("bookingForm");
 
-public class PageServlet extends HttpServlet {
+if(bookingForm){
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+bookingForm.addEventListener("submit", function(e){
+e.preventDefault();
 
-        String page = request.getParameter("page");
+let userName = document.getElementById("name").value;
 
-        if (page == null || page.equals("")) {
-            page = "index.html";
-        }
+document.getElementById("message").innerHTML =
+"Booking Confirmed for " + userName;
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher(page);
-        dispatcher.forward(request, response);
-    }
+this.reset();
+});
+
 }
